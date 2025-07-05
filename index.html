@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<style>
+    body {
+        background-color: aqua;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        font-family: sans-serif;
+        flex-direction: column;
+    }
+    .input {
+        background-color: black;
+        margin-top: 5px;
+        border: 0px;
+        cursor: text;
+        padding: 20px;
+        padding-left: 35px;
+        padding-right: 35px;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        color: white;
+        width: 195px;
+    }
+    .res {
+        background-color: black;
+        width: 195px;
+        border: 0px;
+        cursor: text;
+        padding: 20px;
+        padding-left: 35px;
+        padding-right: 35px;
+        border-radius: 20px; 
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        color: white;
+    }
+    .box {
+        background-color: pink;
+        border-radius: 20px;
+        width: 300px;
+        align-items: center;
+        text-align: center;
+        place-items: center;
+        place-content: center;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+    .buttons {
+        size: 100px;
+        display: grid;
+        grid-template-columns: repeat(4, 2fr);
+        gap: 15px;
+        border: 0px;
+        padding: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .buttons1 {
+        background: #2a2a3b;
+        color: #fff;
+        border: none;
+        font-size: 1.5em;
+        padding: 20px;
+        border-radius: 12px;
+        cursor: pointer;
+    }
+    .buttons1:hover {
+        transition: background 0.2s;
+        background-color: white;
+        color: #2a2a3b;
+    }
+</style>
+<body>
+    <h1 style="text-align: center;">Calculator</h1>
+    <form action="" method="post">
+        <div style="align-content: center;">
+        <div class="box">
+        <div style="text-align: center;">
+            <div>
+                <input type="text" class="input" readonly value="">
+            </div>
+            <div style="margin-top: 20px;">
+                <input type="text" class="res" readonly value="">
+            </div>
+        </div>
+        <div class="buttons">
+        <button class="buttons1" type="submit" name="button" value="C">C</button>
+        <button class="buttons1" type="submit" name="button" value="root">&#8730;</button>
+        <button class="buttons1" type="submit" name="button" value="%">%</button>
+        <button class="buttons1" type="submit" name="button" value="/" class="operator">÷</button>
+
+        <button class="buttons1" type="submit" name="button" value="7">7</button>
+        <button class="buttons1" type="submit" name="button" value="8">8</button>
+        <button class="buttons1" type="submit" name="button" value="9">9</button>
+        <button class="buttons1" type="submit" name="button" value="*" class="operator">×</button>
+
+        <button class="buttons1" type="submit" name="button" value="4">4</button>
+        <button class="buttons1" type="submit" name="button" value="5">5</button>
+        <button class="buttons1" type="submit" name="button" value="6">6</button>
+        <button class="buttons1" type="submit" name="button" value="-" class="operator">−</button>
+
+        <button class="buttons1" type="submit" name="button" value="1">1</button>
+        <button class="buttons1" type="submit" name="button" value="2">2</button>
+        <button class="buttons1" type="submit" name="button" value="3">3</button>
+        <button class="buttons1" type="submit" name="button" value="+" class="operator">+</button>
+
+        <button class="buttons1" type="submit" name="button" value="0">0</button>
+        <button class="buttons1" type="submit" name="button" value=".">.</button>
+        <button class="buttons1" type="submit" name="button" value="=" class="equals">=</button>
+        <input type="hidden" name="expression" value="" readonly>
+      </div>
+        </div>
+        </div>
+    </form>
+</body>
+</html>
